@@ -8,4 +8,5 @@ set hlsearch
 colorscheme torte
 map <PageUp> <>
 map <PageDown> <>
-execute pathogen#infect()
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
